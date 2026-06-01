@@ -3,7 +3,7 @@
 ### 🌙 The Complete Islamic Companion — Quran • Prayer • Knowledge • Life
 
 <p align="center">
-  <img src="assets/banner.png"/>
+  <img src="banner.png"/>
 </p>
 
 <p align="center">
@@ -60,6 +60,9 @@
 <p align="center">
   <img src="screenshots/main.png" width="220"/>
   <img src="screenshots/home.png" width="220"/>
+</p>
+
+<p align="center">
   <img src="screenshots/quran.png" width="220"/>
   <img src="screenshots/prayer.png" width="220"/>
 </p>
@@ -67,6 +70,9 @@
 <p align="center">
   <img src="screenshots/ayah.png" width="220"/>
   <img src="screenshots/notifications.png" width="220"/>
+</p>
+
+<p align="center">
   <img src="screenshots/azkar.png" width="220"/>
   <img src="screenshots/radio.png" width="220"/>
 </p>
