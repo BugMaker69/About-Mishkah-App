@@ -1,11 +1,22 @@
+
 # 🕌 Mishkah | مشكاة  
 ### 🌙 The Complete Islamic Companion — Quran • Prayer • Knowledge • Life
+
+<p align="center">
+  <img src="assets/banner.png"/>
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Flutter-Powered-blue?style=for-the-badge&logo=flutter"/>
   <img src="https://img.shields.io/badge/Islamic-App-green?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Quran%20%26%20Hadith-Complete-success?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Offline%20Ready-orange?style=for-the-badge"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/bugmaker69/About-Mishkah-App?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/forks/bugmaker69/About-Mishkah-App?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/license/bugmaker69/About-Mishkah-App?style=for-the-badge"/>
 </p>
 
 ---
@@ -17,6 +28,63 @@
 
 <p align="center">
   📖 Quran • 🕌 Prayer • 🤲 Azkar • 📚 Knowledge • 🧠 Learning • 📡 Live Content • 🕋 Worship Tools
+</p>
+
+<p align="center">
+
+🔗 <a href="https://bugmaker69.github.io/About-Mishkah-App/">Official Website</a>  
+🔒 <a href="https://bugmaker69.github.io/About-Mishkah-App/privacy.html">Privacy Policy</a>
+
+</p>
+
+---
+
+# 🚀 Highlights
+
+- 📖 Full Quran Experience with audio, tafsir, auto-scroll & offline support
+- 🕌 Accurate Prayer Times for all countries and cities
+- ❤️ Interactive Quran Progress Heart Tracker
+- 📅 Smart Islamic Events & Hijri Calendar
+- 📚 Massive Islamic Knowledge Library
+- 📻 Live Islamic Radio & Background Playback
+- 🧠 Multi-Level Islamic Quiz System
+- 📤 Advanced PDF & Media Sharing
+- 🌙 Smart Notifications & Worship Reminders
+- 🕋 Qibla Compass with Accuracy Detection
+- 📱 Beautiful Islamic UI with Dark Mode Support
+
+---
+
+# 📸 Screenshots
+
+<p align="center">
+  <img src="screenshots/main.png" width="220"/>
+  <img src="screenshots/home.png" width="220"/>
+  <img src="screenshots/quran.png" width="220"/>
+  <img src="screenshots/prayer.png" width="220"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/ayah.png" width="220"/>
+  <img src="screenshots/notifications.png" width="220"/>
+  <img src="screenshots/azkar.png" width="220"/>
+  <img src="screenshots/radio.png" width="220"/>
+</p>
+
+---
+
+# 📲 Download
+
+<p align="center">
+
+<a href="#">
+  <img src="https://img.shields.io/badge/Android-Coming%20Soon-success?style=for-the-badge&logo=android"/>
+</a>
+
+<a href="https://bugmaker69.github.io/About-Mishkah-App/">
+  <img src="https://img.shields.io/badge/Live-Website-green?style=for-the-badge"/>
+</a>
+
 </p>
 
 ---
@@ -69,15 +137,11 @@ Mishkah is built to be a **daily Islamic companion** that connects every aspect 
 
 ## ❤️ Quran Progress System (Heart Tracker)
 - Interactive heart-based visualization of all Surahs
-- Each Surah can be:
-  - Memorized
-  - Under revision
+- Memorization & revision tracking
 - Color-coded progress system
 - Full Quran completion tracking
-- Surah-level progress tracking
-- Automatic motivational completion messages
-- Auto navigation to next Surah after completion
-- PDF export of progress
+- Motivational completion experience
+- PDF export support
 
 ---
 
@@ -86,250 +150,121 @@ Mishkah is built to be a **daily Islamic companion** that connects every aspect 
 - Multiple calculation methods
 - Monthly prayer calendar
 - Full yearly schedule
-- Share monthly prayer timetable as PDF
-- Smart Azan control:
-  - Enable/disable each prayer separately
-  - Pre-azan notifications
-  - Iqama reminders
-- Next prayer countdown (live)
-- Time remaining tracking
-- Automatic location-based updates
+- Share prayer timetable as PDF
+- Smart Azan controls
+- Pre-Azan notifications
+- Iqama reminders
+- Live next prayer countdown
+- Dynamic timezone handling
 
 ---
 
 ## 📅 Islamic Calendar & Events
 - Hijri & Gregorian calendar
-- Full annual Islamic calendar
-- Smart Islamic events system:
-  - Ramadan
-  - Eid Al-Fitr
-  - Eid Al-Adha
-  - Day of Arafah
-  - First 10 days of Dhul Hijjah
-- Events appear ONLY when active (context-aware system)
-- Event sharing as PDF
+- Ramadan, Eid, Arafah & Dhul Hijjah support
+- Context-aware event system
+- Seasonal Islamic decorations
+- PDF sharing support
 
 ---
 
 ## 🤲 Azkar & Daily Worship
-- Morning Azkar
-- Evening Azkar
-- Sleep Azkar
-- After prayer Azkar
-- Food & daily supplications
-- Prophetic duas
-- Quranic duas
-- Dua Khatm Al-Quran
-- Smart reminders based on time of day
+- Morning & Evening Azkar
+- Sleep & daily Azkar
+- Quranic & Prophetic Duas
+- Smart reminders
 
 ---
 
 ## 📿 Digital Tasbeeh
-- Tap counter with vibration feedback
-- Selected dhikr display
-- Progress tracking
-- Usage history & analytics
+- Interactive tasbeeh counter
+- Vibration support
+- Statistics & tracking system
 
 ---
 
-## 🧠 Islamic Knowledge Universe
-
-### 📚 Hadith Library
-- Sahih Al-Bukhari
-- Sahih Muslim
-- Tirmidhi
-- Nasai
-- Ibn Majah
-- Muwatta Malik
-- Hadith Qudsi
-- Nawawi collections
-- Search, favorites & sharing
+## 📚 Islamic Knowledge Universe
+- Hadith collections
+- Tafsir libraries
+- Islamic books
+- Prophet stories
+- Sahabah stories
+- Islamic history
+- Hajj & Umrah guides
+- Fatwas & Islamic Q&A
 
 ---
 
-### 📖 Tafsir Engine
-- Tafsir Al-Muyassar
-- Ibn Kathir
-- Al-Qurtubi
-- Al-Saadi
-- I’rab Al-Quran
-- Advanced search system
-- Bookmark & share any explanation
-
----
-
-### 📚 Islamic Books Library
-- Riyadh Al-Salihin
-- Adab Al-Mufrad
-- Bulugh Al-Maram
-- Shama’il Muhammadiyah
-- Mishkat Al-Masabih
-- Full search + favorites + sharing
-
----
-
-### 🧠 Islamic Learning System
-- Multi-level quizzes:
-  - Aqeedah
-  - Tafsir
-  - Hadith
-  - Fiqh
-  - Arabic Language
+## 🧠 Islamic Learning System
+- Multi-category quizzes
 - 3 difficulty levels
-- Random question generator
-- Score tracking
-- Exam history
-- Performance analytics
+- Random question generation
+- Analytics & score history
 
 ---
 
 ## 🧭 Qibla Direction
 - High-precision Qibla compass
-- Real-time direction detection
-- Notification when direction is correct
+- Real-time alignment detection
 
 ---
 
-## 📡 Islamic Radio & Live Content
-- Live Islamic radio stations
-- Background playback support
-- Notifications for current station
-- Smooth switching between stations
-- Favorites system
-
----
-
-## 🎥 Islamic Media Center
-- Lectures & sermons
-- Islamic video content
-- YouTube integration
-- Save & share content
+## 📡 Islamic Radio & Media
+- Live Islamic stations
+- Background playback
+- Notifications integration
+- Favorites support
 
 ---
 
 ## 🏡 Your Paradise Assets
-- Every dhikr builds symbolic rewards
-- Visual representation of good deeds
-- Progress-based spiritual growth system
-- Personal “good deeds” dashboard
+- Spiritual rewards visualization
+- Daily dhikr progress
+- Personal Islamic achievements dashboard
 
 ---
 
-## 🕌 Islamic Life Pages (Context-Based Content)
-- Ramadan page (appears only in Ramadan)
-- Eid pages (Fitr & Adha)
-- Day of Arafah page
-- Dhul Hijjah 10 days page
-- Seasonal Islamic experiences
-- Smart visibility system (time-based activation)
-
----
-
-## 💰 Zakat Calculator
-- Easy calculation tool
-- Instant results
-- Share results as image/PDF
-
----
-
-## 🧾 Fatwa & Guidance System
-- Ibn Baz Fatwas:
-  - Lessons
-  - Large collection
-  - “Noor on the Path” series
-- Searchable Islamic rulings
-- Audio Q&A support
-
----
-
-## 🕋 Hajj & Umrah Guide
-- Step-by-step complete guide
-- Ritual explanation
-- Educational flow system
-
----
-
-## 📊 Quran Completion System
-- Track full Quran reading progress
-- Track Surah-level completion
-- Personalized reading journey
-- Completion celebration screen:
-  - Congratulations message
-  - Completed Surahs
-  - Remaining progress
-- Automatic navigation to next Surah
-
----
-
-## 📅 Quran Reading Plans
-- Custom Quran completion schedule
-- User defines:
-  - How many times to ختم القرآن
-  - Time duration
-- Auto-generated daily reading plan
-- PDF export:
-  - Full plan
-  - Daily breakdown
-  - Summary view
-
----
-
-## 📥 Content Management System (User Personalization)
+## 📥 Personal Content Management
 Users can:
-- Add personal Duas
-- Add Notes
+- Add personal notes
 - Add PDFs
 - Add YouTube links
-- Edit or delete content
-- View external content inside the app
+- Save custom duas
+- Edit & manage content
 
 ---
 
-## 🔔 Smart Notifications System
-- Surah Al-Kahf reminder (Friday)
-- Morning Azkar reminders
-- Evening Azkar reminders
+## 🔔 Smart Notifications
+- Friday Surah Al-Kahf reminder
+- Azkar reminders
 - Prayer reminders
-- Night prayer reminders
-- Prophet ﷺ blessings reminders
+- Qiyam Al-Layl reminders
+- Salawat reminders
 
 ---
 
-## 🌍 Personalization System
-- Rearrange home screen icons
-- Light & Dark mode
-- Font size control
-- Language switching (Arabic / English)
-- Individual Quran page settings
+## 🌍 Personalization
+- Arabic & English support
+- Dark & Light themes
+- Font size customization
+- Rearrangeable home layout
+- Independent Quran settings
 
 ---
 
 ## 📤 Advanced Sharing System
-- Share:
-  - Ayah images
-  - Audio recitations
-  - Tafsir
-  - Full PDF reports
-  - Monthly prayer schedules
-  - Quran progress reports
-- Beautiful formatted Islamic design outputs
-
----
-
-## 🧭 Qibla Accuracy Notification
-- Alerts user when direction is perfectly aligned
-
----
-
-## 🌍 Supported Languages
-- Arabic (RTL fully supported)
-- English (LTR fully supported)
+- Ayah cards
+- Audio sharing
+- Video generation
+- Tafsir sharing
+- PDF exports
+- Beautiful Islamic templates
 
 ---
 
 ## 📱 Supported Platforms
 - Android
-- iOS (ready)
+- iOS (Ready)
 - Tablets
 
 ---
@@ -347,6 +282,33 @@ Mishkah is built to be:
 
 ---
 
+# ⭐ Support Mishkah
+
+If you like this project, consider giving it a ⭐ on GitHub  
+and sharing it with others to help spread beneficial Islamic knowledge.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Support-Mishkah-gold?style=for-the-badge"/>
+</p>
+
+---
+
 <p align="center">
   <b>Made with ❤️ for the Ummah</b>
+</p>
+
+---
+
+## 🌐 Explore Mishkah
+
+<p align="center">
+
+<a href="https://bugmaker69.github.io/About-Mishkah-App/">
+  <img src="https://img.shields.io/badge/Visit-Official%20Website-green?style=for-the-badge"/>
+</a>
+
+<a href="https://bugmaker69.github.io/About-Mishkah-App/privacy.html">
+  <img src="https://img.shields.io/badge/Privacy-Policy-blue?style=for-the-badge"/>
+</a>
+
 </p>
