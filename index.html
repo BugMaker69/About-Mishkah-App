@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishkah | Complete Islamic Companion</title>
+    <meta name="description" content="Discover the complete features of Mishkah App. Quran, Prayer, Azkar, and Knowledge.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- CSS Variables --- */
+        :root {
+            --bg-color: #0b1b1f;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --bg-card-hover: rgba(255, 255, 255, 0.05);
+            --text-main: #ffffff;
+            --text-muted: #cbd5e1;
+            --accent-gold: #D4AF37;
+            --accent-gold-hover: #b5952f;
+            --border-color: rgba(212, 175, 55, 0.2);
+            --font-ar: 'Cairo', sans-serif;
+            --font-en: 'Inter', sans-serif;
+            --transition: all 0.3s ease;
+        }
+
+        /* --- Global Reset --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-en);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* --- RTL Support --- */
+        html[lang="ar"], html[dir="rtl"] {
+            font-family: var(--font-ar);
+            text-align: right;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        ul { list-style: none; }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Navbar --- */
+        nav {
+            background: rgba(11, 27, 31, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            font-family: var(--font-ar);
+            letter-spacing: 1px;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            margin-left: 20px;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover { color: var(--accent-gold); }
+
+        /* --- Hero Section --- */
+        .hero {
+            text-align: center;
+            padding: 100px 20px 80px;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.08) 0%, transparent 60%);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, #fff, #b0c4de);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--accent-gold);
+            color: #0b1b1f;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+            transition: var(--transition);
+            border: 2px solid var(--accent-gold);
+        }
+
+        .download-btn:hover {
+            background-color: transparent;
+            color: var(--accent-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.6);
+        }
+
+        /* --- Main Content --- */
+        main { padding: 40px 0 80px; }
+
+        .category-section {
+            margin-bottom: 50px;
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 30px;
+            background: var(--bg-card);
+            transition: var(--transition);
+        }
+
+        .category-section:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            background: var(--bg-card-hover);
+        }
+
+        .category-title {
+            font-size: 1.6rem;
+            color: var(--accent-gold);
+            margin-bottom: 25px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        .feature-item:hover {
+            color: #fff;
+            background: rgba(255,255,255,0.03);
+        }
+
+        .feature-item i {
+            color: var(--accent-gold);
+            margin-top: 5px;
+        }
+
+        .sub-group-title {
+            color: #fff;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            border-left: 3px solid var(--accent-gold);
+            padding-left: 10px;
+            background: linear-gradient(90deg, rgba(212, 175, 55, 0.1), transparent);
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        html[dir="rtl"] .sub-group-title {
+            border-left: none;
+            border-right: 3px solid var(--accent-gold);
+            padding-left: 0;
+            padding-right: 10px;
+            background: linear-gradient(-90deg, rgba(212, 175, 55, 0.1), transparent);
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            background: #050e11;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a:hover { color: var(--accent-gold); }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .features-grid { grid-template-columns: 1fr; }
+            .download-btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">Mishkah</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Everything You Need</h1>
+            <p>Mishkah is the complete Islamic companion. From the Holy Quran to advanced planning tools, it covers every aspect of a Muslim's spiritual life.</p>
+            
+            <!-- Download Button -->
+            <a href="https://drive.google.com/drive/u/0/folders/1mAlHVWlJO8cPge6alvf7J1vaz9-wuED5" class="download-btn">
+                <i class="fas fa-download"></i> Download Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Features List (Detailed) -->
+    <main id="features" class="container">
+
+        <!-- 1. Quran & Mushaf -->
+        <section class="category-section">
+            <div class="category-title"><i class="fas fa-quran"></i> The Holy Quran & Mushaf</div>
+            <div class="features-grid">
+                <div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Complete Quran with multiple reciters</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Realistic Paper Mushaf Mode</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Ayatul Kursi on Home Screen (Text & Audio)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Random Verse on every app open</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Download Full Quran or Single Surah</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Screen Lock to prevent accidental touches</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Search within current Surah or Whole Quran</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Auto-scroll feature</div>
+                </div>
+                <div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Play Full Surah or Single Ayah</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Play from Ayah X to Ayah Y (Auto-scroll to start)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Mark/Ayah highlighting during playback</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Surah Information Card & Details</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Add to Favorites</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Tafsir (Muyassar, Ibn Kathir, Qurtubi, Sa'di, I'rab)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Share Verse (Image, Audio, Video, or Tafsir combinations)</div>
+                </div>
+                <div>
+                    <div class="sub-group-title">Settings & Progress</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Separate Quran Settings (Font, Mode, Lang, Speed)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Progress Tracking (Surah & Global level)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Time remaining until next prayer display</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Congratulation message on completion</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Auto-redirect to next Surah</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> "Heart inside Heart" tracking for Memorization</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Prayer & Qibla -->
+        <section class="category-section">
+            <div class="category-title"><i class="fas fa-mosque"></i> Prayer Times & Qibla</div>
+            <div class="features-grid">
+                <div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Prayer Times for all countries & cities</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Play/Stop Adhan for specific prayers</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Pre-Adhan and Iqama reminders</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> High-precision Qibla Compass</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Notification when Qibla is perfectly aligned</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Hijri & Gregorian Date & Calendar</div>
+                </div>
+                <div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Annual Prayer Timetable</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Share Monthly Schedule as PDF</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Islamic Occasions (Ramadan, Eid, etc.)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> App Decorations (Zina) for Occasions</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> 10 Days of Dhul-Hijjah highlighting</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Events appear only during their time</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Azkar & Tasbeeh -->
+        <section class="category-section">
+            <div class="category-title"><i class="fas fa-hands-praying"></i> Azkar & Tasbeeh</div>
+            <div class="features-grid">
+                <div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Morning, Evening, Sleep Azkar</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Food & Post-Prayer Azkar</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Quranic & Prophetic Duas</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Duas for Completing Quran</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Electronic Tasbeeh (Counter & Button)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Vibration toggle for Tasbeeh</div>
+                </div>
+                <div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Tasbeeh History & Statistics</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> "Your Assets in Paradise" (Amalakuk)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Visual progress in Paradise</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Notification: Friday Surah Al-Kahf</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Notification: Salawat & Qiyam Al-Layl</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Islamic Library -->
+        <section class="category-section">
+            <div class="category-title"><i class="fas fa-book-open"></i> Islamic Library</div>
+            <div class="features-grid">
+                <div>
+                    <div class="sub-group-title">Hadith Collections</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Bukhari, Muslim, Tirmidhi, Nasa'i, Majah</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Muwatta Malik, Darimi, Qudsi, Nawawi, Dawud</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Search, Add to Favorites, Share</div>
+                </div>
+                <div>
+                    <div class="sub-group-title">Books & Tafsir</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Riyadh Al-Salihin, Bulugh Al-Maram</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Mishkat, Al-Adab Al-Mufrad, Shama'il</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Tafsir: Muyassar, Ibn Kathir, Qurtubi, Sa'di</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> I'rab Al-Quran, 99 Names of Allah</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. History & Education -->
+        <section class="category-section">
+            <div class="category-title"><i class="fas fa-landmark"></i> History, Seerah & Education</div>
+            <div class="features-grid">
+                <div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Stories of the Prophets & Quran/Sunnah</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Prophet Muhammad's Full Life (Seerah)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Lineage, Sons, Wives, Details</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> The Companions (Sahaba) Details</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> The Ten Promised Paradise</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Ghazwat (Battles), Wars, Saraya</div>
+                </div>
+                <div>
+                    <div class="sub-group-title">Quizzes & Fatawa</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Quizzes: Tafsir, Aqidah, Hadith, Fiqh, Arabic</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> 3 Levels, Random Questions, Grade Tracking</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Fatwa Center (Sheikh Ibn Baz)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Q&A & Audio Fatawa</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Step-by-Step Hajj, Umrah, Prayer & Wudu Guides</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Utilities -->
+        <section class="category-section">
+            <div class="category-title"><i class="fas fa-tools"></i> Utilities & Media</div>
+            <div class="features-grid">
+                <div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Islamic Radio (Searchable, Background Play)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Live Channels (Makkah & Madinah)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Video Lectures & Ruqyah Shar’iah</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Zakat Calculator & Result Sharing</div>
+                </div>
+                <div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Quran Khatm Planner (PDF Export)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Daily breakdown (Pages, Juz, Surahs)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Personal Content Manager (PDFs, Notes, Links)</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Add Custom Duas & YouTube Links</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Customization -->
+        <section class="category-section">
+            <div class="category-title"><i class="fas fa-sliders-h"></i> Customization</div>
+            <div class="features-grid">
+                <div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Arabic & English Support</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Dark & Light Modes</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Adjustable Font Sizes</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Customizable Home Screen Icons</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Download & Manage Content</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> About App & About User Page</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#features">Features</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="#">Contact Support</a>
+            </div>
+            <p>&copy; 2023 Mishkah App. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
